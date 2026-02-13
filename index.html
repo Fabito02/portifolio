@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="source/style.css">
+    <title>Portifólio | Fabiano Júnior</title>
+</head>
+<body>
+    <div class="blur">
+        <div class="ball1 ball"></div>
+        <div class="ball2 ball"></div>
+        <div class="ball3 ball"></div>
+        <div class="ball4 ball"></div>
+        <div class="ball5 ball"></div>
+    </div>
+    <div class="modal" id="modal" style="display: none;">
+        <div class="close" onclick="closeModal()"><i class="fas fa-times"></i></div>
+        <img src="" id="modalImg">
+    </div>
+    <div class="return" id="return"><i class="fa-solid fa-arrow-up" onclick="primeiraParte()"></i></div>
+    <div class="theme" id="theme" onclick="setTheme()"><i class="fa-solid fa-toggle-on"></i></div>
+    <main>
+        <div class="inicial" id="primeiraParte">
+            <div class="me_container">
+                <img src="https://avatars.githubusercontent.com/u/138934847?v=4" class="avatar" onclick="pular()">
+            </div>            
+            <div class="name">
+                <h1>Fabiano Júnior Lima Barbosa</h1>
+            </div>
+            <div class="contatos">
+                <i class="bi bi-github" onclick="window.open('https://github.com/Fabito02/', '_blank')" title="Github"></i>
+                <i class="bi bi-envelope-fill" onclick="window.open('mailto:fabianojuniorlimaba2@gmail.com', '_blank')" title="E-mail"></i>
+                <i class="bi bi-telegram" onclick="window.open('https://t.me/BinnaryBard', '_blank')" title="Telegram"></i>
+                <i class="bi bi-whatsapp" onclick="window.open('https://wa.me/qr/EKDQBVYJZN3MD1', '_blank')" title="Whatsapp"></i>
+            </div>    
+            <div class="categorias">
+                    <h2 style="font-size: 26px;">TÓPICOS</h2>
+                <div class="botoesGuia">
+                    <button onclick="segundaParte()" class="botaoGuia sobre">Sobre</button>
+                    <button onclick="terceiraParte()" class="botaoGuia competencias">Competências</button>
+                    <button onclick="quartaParte()" class="botaoGuia projetos">Projetos</button>
+                </div>
+            </div>
+        </div>
+        <div class="segundaParte animar" id="segundaParte">
+            <div class="boxes">
+                <div class="box">
+                    <h2>Sobre Mim <i class="fas fa-user"></i></h2>
+                    <p>
+                        Desenvolvedor focado em construir interfaces modernas e sistemas escaláveis. 
+                        Minha jornada começou aos 12 anos com Arduino, o que despertou minha paixão por resolver problemas complexos através do código.
+                        <br><br>
+                        Sou técnico em Informática pelo <b>IFNMG</b>, onde <b>participei do desenvolvimento</b> de projetos no <b>LUANDA</b> (Laboratório de Pesquisa, Desenvolvimento e Análise de Dados). Nesse ambiente colaborativo, contribuí com a criação de soluções reais utilizando tecnologias de ponta, unindo pesquisa acadêmica e tecnologia.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>Minhas Habilidades <i class="fa-solid fa-briefcase" style="font-size: 24px; transform: translateY(-2px);"></i></h2>
+                    <p>
+                        <b>Frontend & Mobile:</b> Especialista em ecossistema React (Next.js), TypeScript e estilização avançada com foco em UX/UI responsivo.
+                        <br><br>
+                        <b>Backend & Cloud:</b> Experiência com Node.js, Docker e integração de serviços Firebase (Auth, Firestore, Realtime Database).
+                        <br><br>
+                        <b>DevOps & OS:</b> Administração de sistemas Linux, automação via CLI e foco em performance de hardware/software.
+                    </p>
+                </div>
+            </div>    
+        </div>
+            <div class="terceiraParte animar" id="terceiraParte">
+                <div class="h2Title">
+                    <h2 style="font-size: 36px;">COMPETÊNCIAS <i class="fas fa-graduation-cap"  style="margin-left: 10px;"></i></h2>
+                </div>
+            <div class="habilidades">
+
+              <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+              <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+              <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+              <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+              <img src="https://img.shields.io/badge/TSX-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+              <img src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+              <img src="https://img.shields.io/badge/Material--UI-007FFF.svg?style=for-the-badge&logo=mui&logoColor=white" />
+              <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
+              <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
+              <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
+              <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+              <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+              <img src="https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" />
+
+            </div>
+        </div>
+        <div class="quartaParte animar" id="quartaParte">
+            
+            <div class="h2Title">
+                <h2 style="font-size: 36px;">Projetos <i class="fas fa-project-diagram"  style="margin-left: 10px;"></i></h2>
+            </div>
+            
+            <div class="box">
+                <h2>Auris - Ouvidoria digital</h2>
+                <div style="display: flex;">
+                    <button onclick="window.open('https://github.com/Fabito02/site_de_compras-session_storage', '_blank')" class="boxBtn githubOnly">GitHub</button>
+                </div>
+                <img src="assets/img/img20.png" onclick="openModal(this)"><img src="assets/img/img21.png" onclick="openModal(this)"><img src="assets/img/img22.png" onclick="openModal(this)"><img src="assets/img/img23.png" onclick="openModal(this)">
+            </div>
+            
+            <div class="box">
+                <h2>BioWave</h2>
+                <div style="display: flex;">
+                    <button onclick="window.open('https://mostradecienciasematematica-info0123.netlify.app/', '_blank')" class="boxBtn acessar">Acessar</button>
+                    <button onclick="window.open('https://github.com/Fabito02/Mostra-de-Ciencias-e-Matematica-Info-0123-2024', '_blank')" class="boxBtn github">GitHub</button>
+                </div>
+                <img src="assets/img/img12.png" onclick="openModal(this)"><img src="assets/img/img13.png" onclick="openModal(this)"><img src="assets/img/img14.png" onclick="openModal(this)"><img src="assets/img/img15.png" onclick="openModal(this)">
+            </div>
+            
+            <div class="box">
+                <h2>EcooSing</h2>
+                <div style="display: flex;">
+                    <button onclick="window.open('ecoosing.netlify.app/', '_blank')" class="boxBtn acessar">Acessar</button>
+                    <button onclick="window.open('https://github.com/Fabito02/EcooSing', '_blank')" class="boxBtn github">Github</button>
+                </div>
+                <img src="assets/img/img16.png" onclick="openModal(this)"><img src="assets/img/img17.png" onclick="openModal(this)"><img src="assets/img/img18.png" onclick="openModal(this)"><img src="assets/img/img19.png" onclick="openModal(this)">
+            </div>
+            
+            <div class="box">
+                <h2>Estação das Letras</h2>
+                <div style="display: flex;">
+                    <button onclick="window.open('https://fabito02.github.io/site_de_compras-session_storage/', '_blank')" class="boxBtn acessar">Acessar</button>
+                    <button onclick="window.open('https://github.com/Fabito02/site_de_compras-session_storage', '_blank')" class="boxBtn github">GitHub</button>
+                </div>
+                <img src="assets/img/img8.png" onclick="openModal(this)"><img src="assets/img/img9.png" onclick="openModal(this)"><img src="assets/img/img10.png" onclick="openModal(this)"><img src="assets/img/img11.png" onclick="openModal(this)">
+            </div>
+
+            <div class="box">
+                <h2>Artes de Gleiciane Lima</h2>
+                <div style="display: flex;">
+                    <button onclick="window.open('https://artes-de-gleiciane-lima.netlify.app/', '_blank')" class="boxBtn acessar">Acessar</button>
+                    <button onclick="window.open('https://github.com/Fabito02/Galeria-de-Pinturas-e-Artesanatos', '_blank')" class="boxBtn github">GitHub</button>
+                </div>
+                <img src="assets/img/img0.png" onclick="openModal(this)"><img src="assets/img/img1.png" onclick="openModal(this)"><img src="assets/img/img2.png" onclick="openModal(this)"><img src="assets/img/img3.png" onclick="openModal(this)">
+            </div>
+
+            <div class="box">
+                <h2>Conversor de Moedas</h2>
+                <div style="display: flex;">
+                    <button onclick="window.open('https://fabito02.github.io/Conversor-de-Moedas-com-API/', '_blank')" class="boxBtn acessar">Acessar</button>
+                    <button onclick="window.open('https://github.com/Fabito02/Conversor-de-Moedas-com-API', '_blank')" class="boxBtn github">GitHub</button>
+                </div>
+                <img src="assets/img/img4.png" onclick="openModal(this)"><img src="assets/img/img5.png" onclick="openModal(this)"><img src="assets/img/img6.png" onclick="openModal(this)"><img src="assets/img/img7.png" onclick="openModal(this)">
+            </div>
+        </div>
+        <footer><p style="font-size: 14px; text-align: center;">&copy; 2024 Fabiano Júnior Lima Barbosa | Todos os direitos reservados.</p></footer>
+    </main>
+</body>
+<script src="source/script.js"></script> 
+</html>
